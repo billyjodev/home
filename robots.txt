@@ -1,0 +1,10 @@
+# robots.txt for Web Tools
+
+User-agent: *
+Allow: /
+
+# Disallow noise-logger folder
+Disallow: /noise-logger/
+
+# Sitemap
+Sitemap: https://billyjodev.github.io/home/sitemap.xml

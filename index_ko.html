@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E45EZ8PC1K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E45EZ8PC1K');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon & Manifest -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" type="image/svg+xml" href="apple-touch-icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#667eea">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="무료 웹 기반 도구 모음: PDF 문서 편집을 위한 PDF 클리어와 AI 채팅 서비스의 마크다운 포맷팅을 위한 MD 클리너.">
+    <meta name="keywords" content="PDF 편집기, 마크다운 클리너, AI 도구, ChatGPT, Claude, Gemini, PDF 편집, 마크다운 포매터, 웹 도구">
+    <meta name="author" content="billy.jo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://billyjodev.github.io/home/index_ko.html">
+
+    <!-- GEO & Language -->
+    <link rel="alternate" hreflang="en" href="https://billyjodev.github.io/home/index.html">
+    <link rel="alternate" hreflang="ko" href="https://billyjodev.github.io/home/index_ko.html">
+    <link rel="alternate" hreflang="x-default" href="https://billyjodev.github.io/home/index.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://billyjodev.github.io/home/">
+    <meta property="og:title" content="웹 도구 - PDF 클리어 & MD 클리너">
+    <meta property="og:description" content="무료 웹 기반 도구: PDF 문서 편집을 위한 PDF 클리어와 AI 채팅 서비스의 마크다운 포맷팅을 위한 MD 클리너.">
+    <meta property="og:image" content="https://billyjodev.github.io/home/og-image.svg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://billyjodev.github.io/home/">
+    <meta name="twitter:title" content="웹 도구 - PDF 클리어 & MD 클리너">
+    <meta name="twitter:description" content="무료 웹 기반 도구: PDF 문서 편집을 위한 PDF 클리어와 AI 채팅 서비스의 마크다운 포맷팅을 위한 MD 클리너.">
+    <meta name="twitter:image" content="https://billyjodev.github.io/home/og-image.svg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "웹 도구",
+        "description": "무료 웹 기반 도구 모음: PDF 클리어와 MD 클리너",
+        "url": "https://billyjodev.github.io/home/index_ko.html",
+        "inLanguage": "ko",
+        "author": {
+            "@type": "Person",
+            "name": "billy.jo"
+        },
+        "about": [
+            {
+                "@type": "SoftwareApplication",
+                "name": "PDF Clear",
+                "description": "PDF 파일의 특정 영역을 선택하고 지정한 색상으로 채우는 웹 앱",
+                "url": "https://billyjodev.github.io/pdf-clear"
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "MD Cleaner",
+                "description": "AI 채팅 서비스에서 받은 마크다운 문서를 깔끔하게 정리하고 미리볼 수 있는 웹 도구",
+                "url": "https://billyjodev.github.io/md-cleaner"
+            }
+        ]
+    }
+    </script>
+
+    <title>웹 도구 - PDF 클리어 & MD 클리너</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            gap: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .cards {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            width: 280px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .card a:hover {
+            opacity: 0.9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .lang-switch:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="lang-switch">English</a>
+    <h1>Web Tools</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>PDF Clear</h2>
+            <p>PDF 파일의 특정 영역을 선택하고 지정한 색상으로 채우는 웹 앱. 모든 처리는 브라우저에서 이루어지며 서버가 필요 없습니다.</p>
+            <a href="https://billyjodev.github.io/pdf-clear" target="_blank">바로가기</a>
+        </div>
+        <div class="card">
+            <h2>MD Cleaner</h2>
+            <p>AI 채팅 서비스(ChatGPT, Gemini, Claude 등)에서 받은 마크다운 문서를 깔끔하게 정리하고 실시간으로 미리볼 수 있는 웹 도구</p>
+            <a href="https://billyjodev.github.io/md-cleaner" target="_blank">바로가기</a>
+        </div>
+    </div>
+    <img src="https://cloud.umami.is/p/BppuaJErs" alt="umami" style="display:none;">
+
+    <footer>by billy.jo</footer>
+</body>
+</html>

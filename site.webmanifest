@@ -1,0 +1,26 @@
+{
+  "name": "Web Tools - PDF Clear & MD Cleaner",
+  "short_name": "Web Tools",
+  "description": "Collection of free web-based tools: PDF Clear for redacting PDF documents, and MD Cleaner for formatting markdown from AI chat services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "en"
+}
