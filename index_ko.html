@@ -20,8 +20,8 @@
     <meta name="theme-color" content="#667eea">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="무료 웹 기반 도구 모음: PDF 문서 편집을 위한 PDF 클리어와 AI 채팅 서비스의 마크다운 포맷팅을 위한 MD 클리너.">
-    <meta name="keywords" content="PDF 편집기, 마크다운 클리너, AI 도구, ChatGPT, Claude, Gemini, PDF 편집, 마크다운 포매터, 웹 도구">
+    <meta name="description" content="무료 웹 기반 도구 모음: NotebookLM 로고 제거와 PDF 편집을 위한 PDF 클리어와 Obsidian에 마크다운 붙여넣기 시 불필요한 공백 라인 제거를 위한 MD 클리너.">
+    <meta name="keywords" content="PDF 편집기, NotebookLM 로고 제거, 마크다운 클리너, Obsidian, AI 도구, ChatGPT, Claude, Gemini, PDF 편집, 마크다운 포매터, 빈 줄 제거, 웹 도구">
     <meta name="author" content="billy.jo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://billyjodev.github.io/home/index_ko.html">
@@ -35,14 +35,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billyjodev.github.io/home/">
     <meta property="og:title" content="웹 도구 - PDF 클리어 & MD 클리너">
-    <meta property="og:description" content="무료 웹 기반 도구: PDF 문서 편집을 위한 PDF 클리어와 AI 채팅 서비스의 마크다운 포맷팅을 위한 MD 클리너.">
+    <meta property="og:description" content="무료 웹 기반 도구: NotebookLM 로고 제거와 PDF 편집을 위한 PDF 클리어와 Obsidian에 마크다운 붙여넣기 시 불필요한 공백 라인 제거를 위한 MD 클리너.">
     <meta property="og:image" content="https://billyjodev.github.io/home/og-image.svg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://billyjodev.github.io/home/">
     <meta name="twitter:title" content="웹 도구 - PDF 클리어 & MD 클리너">
-    <meta name="twitter:description" content="무료 웹 기반 도구: PDF 문서 편집을 위한 PDF 클리어와 AI 채팅 서비스의 마크다운 포맷팅을 위한 MD 클리너.">
+    <meta name="twitter:description" content="무료 웹 기반 도구: NotebookLM 로고 제거와 PDF 편집을 위한 PDF 클리어와 Obsidian에 마크다운 붙여넣기 시 불필요한 공백 라인 제거를 위한 MD 클리너.">
     <meta name="twitter:image" content="https://billyjodev.github.io/home/og-image.svg">
 
     <!-- Structured Data -->
@@ -51,7 +51,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "웹 도구",
-        "description": "무료 웹 기반 도구 모음: PDF 클리어와 MD 클리너",
+        "description": "무료 웹 기반 도구 모음: NotebookLM 로고 제거와 PDF 편집을 위한 PDF 클리어와 Obsidian에 마크다운 붙여넣기 시 불필요한 공백 라인 제거를 위한 MD 클리너",
         "url": "https://billyjodev.github.io/home/index_ko.html",
         "inLanguage": "ko",
         "author": {
@@ -62,13 +62,13 @@
             {
                 "@type": "SoftwareApplication",
                 "name": "PDF Clear",
-                "description": "PDF 파일의 특정 영역을 선택하고 지정한 색상으로 채우는 웹 앱",
+                "description": "Google NotebookLM 로고를 PDF에서 제거하는 웹 앱. NotebookLM에서 생성한 PDF를 불러오고 편집할 영역을 선택한 후 PPT로 저장하면 선택한 영역들이 개별 이미지 객체로 분리되어 수정이 용이함",
                 "url": "https://billyjodev.github.io/pdf-clear"
             },
             {
                 "@type": "SoftwareApplication",
                 "name": "MD Cleaner",
-                "description": "AI 채팅 서비스에서 받은 마크다운 문서를 깔끔하게 정리하고 미리볼 수 있는 웹 도구",
+                "description": "ChatGPT, Gemini 등에서 제공한 마크다운 텍스트를 Obsidian 문서에 붙여넣을 때 불필요하게 추가되는 공백 라인을 제거하는 웹 기반 도구",
                 "url": "https://billyjodev.github.io/md-cleaner"
             }
         ]
@@ -117,6 +117,8 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: slideUp 0.8s ease-out;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -138,7 +140,10 @@
         }
 
         .card a {
-            display: inline-block;
+            display: block;
+            width: fit-content;
+            margin-top: auto;
+            margin-left: auto;
             padding: 10px 24px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -207,12 +212,12 @@
     <div class="cards">
         <div class="card">
             <h2>PDF Clear</h2>
-            <p>PDF 파일의 특정 영역을 선택하고 지정한 색상으로 채우는 웹 앱. 모든 처리는 브라우저에서 이루어지며 서버가 필요 없습니다.</p>
+            <p>Google NotebookLM 로고 제거에 최적화되어 있습니다. NotebookLM에서 생성한 PDF를 불러오고 편집할 부분을 선택한 후 PPT로 저장하면 선택한 영역들이 개별 이미지 객체로 분리되어 수정이 쉽습니다.</p>
             <a href="https://billyjodev.github.io/pdf-clear" target="_blank">바로가기</a>
         </div>
         <div class="card">
             <h2>MD Cleaner</h2>
-            <p>AI 채팅 서비스(ChatGPT, Gemini, Claude 등)에서 받은 마크다운 문서를 깔끔하게 정리하고 실시간으로 미리볼 수 있는 웹 도구</p>
+            <p>ChatGPT, Gemini 등에서 받은 마크다운 텍스트를 Obsidian 문서에 붙여넣을 때 불필요하게 추가되는 공백 라인을 제거합니다. 깔끔한 포맷팅을 위한 도구입니다.</p>
             <a href="https://billyjodev.github.io/md-cleaner" target="_blank">바로가기</a>
         </div>
     </div>

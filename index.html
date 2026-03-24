@@ -20,8 +20,8 @@
     <meta name="theme-color" content="#667eea">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Collection of free web-based tools: PDF Clear for redacting PDF documents, and MD Cleaner for formatting markdown from AI chat services.">
-    <meta name="keywords" content="PDF editor, markdown cleaner, AI tools, ChatGPT, Claude, Gemini, PDF redaction, markdown formatter, web tools">
+    <meta name="description" content="Collection of free web-based tools: PDF Clear for removing NotebookLM logos and editing PDFs, and MD Cleaner for removing extra blank lines when pasting markdown to Obsidian.">
+    <meta name="keywords" content="PDF editor, NotebookLM logo remover, markdown cleaner, Obsidian, AI tools, ChatGPT, Claude, Gemini, PDF redaction, markdown formatter, blank line remover, web tools">
     <meta name="author" content="billy.jo">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://billyjodev.github.io/home/">
@@ -35,14 +35,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billyjodev.github.io/home/">
     <meta property="og:title" content="Web Tools - PDF Clear & MD Cleaner">
-    <meta property="og:description" content="Free web-based tools: PDF Clear for redacting PDF documents, and MD Cleaner for formatting markdown from AI chat services.">
+    <meta property="og:description" content="Free web-based tools: PDF Clear for removing NotebookLM logos and editing PDFs, and MD Cleaner for removing extra blank lines when pasting markdown to Obsidian.">
     <meta property="og:image" content="https://billyjodev.github.io/home/og-image.svg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://billyjodev.github.io/home/">
     <meta name="twitter:title" content="Web Tools - PDF Clear & MD Cleaner">
-    <meta name="twitter:description" content="Free web-based tools: PDF Clear for redacting PDF documents, and MD Cleaner for formatting markdown from AI chat services.">
+    <meta name="twitter:description" content="Free web-based tools: PDF Clear for removing NotebookLM logos and editing PDFs, and MD Cleaner for removing extra blank lines when pasting markdown to Obsidian.">
     <meta name="twitter:image" content="https://billyjodev.github.io/home/og-image.svg">
 
     <!-- Structured Data -->
@@ -51,7 +51,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Web Tools",
-        "description": "Collection of free web-based tools: PDF Clear and MD Cleaner",
+        "description": "Collection of free web-based tools: PDF Clear for removing NotebookLM logos and editing PDFs, and MD Cleaner for removing extra blank lines when pasting markdown to Obsidian",
         "url": "https://billyjodev.github.io/home/",
         "inLanguage": "en",
         "author": {
@@ -62,13 +62,13 @@
             {
                 "@type": "SoftwareApplication",
                 "name": "PDF Clear",
-                "description": "Web app to select and fill specific areas of PDF files with specified colors",
+                "description": "Web app to remove Google NotebookLM logos from PDFs. Load NotebookLM-generated PDFs, select areas to edit, and save as PPT for easy modification with separated image objects",
                 "url": "https://billyjodev.github.io/pdf-clear"
             },
             {
                 "@type": "SoftwareApplication",
                 "name": "MD Cleaner",
-                "description": "Web-based tool to clean up and preview markdown documents from AI chat services",
+                "description": "Web-based tool to remove unnecessary blank lines when pasting markdown text from ChatGPT, Gemini, etc. into Obsidian documents",
                 "url": "https://billyjodev.github.io/md-cleaner"
             }
         ]
@@ -117,6 +117,8 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: slideUp 0.8s ease-out;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -138,7 +140,10 @@
         }
 
         .card a {
-            display: inline-block;
+            display: block;
+            width: fit-content;
+            margin-top: auto;
+            margin-left: auto;
             padding: 10px 24px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -207,12 +212,12 @@
     <div class="cards">
         <div class="card">
             <h2>PDF Clear</h2>
-            <p>A web app to select specific areas of PDF files and fill them with a specified color. All processing happens in the browser with no server required.</p>
+            <p>Perfect for removing Google NotebookLM logos. Load PDFs from NotebookLM, select areas to edit, and save as PPT—selected areas become separate image objects for easy modification.</p>
             <a href="https://billyjodev.github.io/pdf-clear" target="_blank">Open</a>
         </div>
         <div class="card">
             <h2>MD Cleaner</h2>
-            <p>A web-based tool to clean up and preview markdown documents from AI chat services (ChatGPT, Gemini, Claude, etc.) in real-time</p>
+            <p>Remove unnecessary blank lines when pasting markdown text from ChatGPT, Gemini, etc. into Obsidian documents. Clean formatting for your notes.</p>
             <a href="https://billyjodev.github.io/md-cleaner" target="_blank">Open</a>
         </div>
     </div>
