@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Source Licenses / 오픈소스 라이선스</title>
+  <style>
+    :root {
+      --bg-color: #f5f5f5;
+      --card-bg: #ffffff;
+      --text-primary: #1a1a1a;
+      --text-secondary: #666666;
+      --border-color: #e0e0e0;
+      --accent-color: #3b82f6;
+      --header-bg: #1e293b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --text-primary: #f1f5f9;
+        --text-secondary: #94a3b8;
+        --border-color: #334155;
+        --header-bg: #0f172a;
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding: 16px;
+    }
+    .header {
+      background: var(--header-bg);
+      color: white;
+      padding: 20px 16px;
+      margin: -16px -16px 20px -16px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .header .subtitle {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+    .section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .section-title .ko {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-left: 8px;
+    }
+    .subsection-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin: 12px 0 8px 0;
+    }
+    .subsection-title .ko {
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .license-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    .badge-mit {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .badge-apache {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    @media (prefers-color-scheme: dark) {
+      .badge-mit {
+        background: #166534;
+        color: #dcfce7;
+      }
+      .badge-apache {
+        background: #92400e;
+        color: #fef3c7;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      table-layout: fixed;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 4px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+    th:first-child,
+    td:first-child {
+      width: 75%;
+    }
+    th:last-child,
+    td:last-child {
+      width: 25%;
+      text-align: right;
+    }
+    th {
+      font-weight: 600;
+      color: var(--text-secondary);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    th .ko {
+      text-transform: none;
+      font-weight: 400;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .package-name {
+      font-weight: 500;
+      color: var(--accent-color);
+    }
+    .license-text {
+      background: var(--bg-color);
+      border-radius: 8px;
+      padding: 12px;
+      font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+      font-size: 11px;
+      white-space: pre-wrap;
+      overflow-x: auto;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .notes {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .notes ul {
+      margin-left: 16px;
+      margin-top: 8px;
+    }
+    .notes li {
+      margin-bottom: 4px;
+    }
+    .notes li .ko {
+      display: block;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    .lang-pair {
+      margin-bottom: 4px;
+    }
+    .lang-pair .en {
+      display: block;
+    }
+    .lang-pair .ko {
+      display: block;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Open Source Licenses</h1>
+    <p class="subtitle">오픈소스 라이선스</p>
+  </div>
+
+  <div class="section">
+    <p class="lang-pair">
+      <span class="en">This application uses the following open source software packages.</span>
+      <span class="ko">이 애플리케이션은 다음 오픈소스 소프트웨어 패키지를 사용합니다.</span>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">MIT License</h2>
+
+    <h3 class="subsection-title">Core Dependencies <span class="ko">/ 핵심 의존성</span></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Package <span class="ko">/ 패키지</span></th>
+          <th>Version <span class="ko">/ 버전</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="package-name">expo</td><td>~54.0.0</td></tr>
+        <tr><td class="package-name">expo-av</td><td>~16.0.8</td></tr>
+        <tr><td class="package-name">expo-dev-client</td><td>~6.0.20</td></tr>
+        <tr><td class="package-name">expo-image-manipulator</td><td>~14.0.8</td></tr>
+        <tr><td class="package-name">expo-image-picker</td><td>~17.0.10</td></tr>
+        <tr><td class="package-name">expo-modules-core</td><td>~3.0.29</td></tr>
+        <tr><td class="package-name">expo-print</td><td>~15.0.8</td></tr>
+        <tr><td class="package-name">expo-sharing</td><td>~14.0.8</td></tr>
+        <tr><td class="package-name">expo-status-bar</td><td>~3.0.9</td></tr>
+        <tr><td class="package-name">@react-native-async-storage/async-storage</td><td>~1.23.1</td></tr>
+        <tr><td class="package-name">react</td><td>19.1.0</td></tr>
+        <tr><td class="package-name">react-native</td><td>0.81.5</td></tr>
+        <tr><td class="package-name">react-native-safe-area-context</td><td>^5.7.0</td></tr>
+        <tr><td class="package-name">react-native-svg</td><td>^15.15.4</td></tr>
+        <tr><td class="package-name">react-native-webview</td><td>13.15.0</td></tr>
+        <tr><td class="package-name">nativewind</td><td>^4.2.2</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="subsection-title">Development Dependencies <span class="ko">/ 개발 의존성</span></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Package <span class="ko">/ 패키지</span></th>
+          <th>Version <span class="ko">/ 버전</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="package-name">babel-preset-expo</td><td>~54.0.10</td></tr>
+        <tr><td class="package-name">tailwindcss</td><td>^3.4.19</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Apache License 2.0 <span class="license-badge badge-apache">Apache-2.0</span> <span class="ko">아파치 라이선스 2.0</span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Package <span class="ko">/ 패키지</span></th>
+          <th>Version <span class="ko">/ 버전</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="package-name">typescript</td><td>~5.9.2</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">MIT License Text <span class="ko">/ MIT 라이선스 전문</span></h2>
+    <pre class="license-text">MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Apache License 2.0 Text <span class="ko">/ 아파치 라이선스 2.0 전문</span></h2>
+    <pre class="license-text">Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</pre>
+  </div>
+
+  <div class="section notes">
+    <h2 class="section-title">Notes <span class="ko">/ 참고사항</span></h2>
+    <ul>
+      <li>
+        <span class="en">All Expo packages are part of the Expo framework and are licensed under MIT.</span>
+        <span class="ko">모든 Expo 패키지는 Expo 프레임워크의 일부이며 MIT 라이선스하에 배포됩니다.</span>
+      </li>
+      <li>
+        <span class="en">React and React Native are maintained by Meta and are MIT licensed.</span>
+        <span class="ko">React와 React Native는 Meta에서 관리하며 MIT 라이선스하에 배포됩니다.</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
